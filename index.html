@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 Data Dashboard</title>
+    
+    <script type="module" crossorigin src="/assets/index-d288eaca.js"></script>
+    <link rel="stylesheet" href="/assets/index-05660009.css">
+  </head>
+
+  <body>
+    <!-- Add your HTML code here -->
+    <div id="app">
+      <h1>COVID-19 Data Dashboard</h1>
+      <input type="text" id="countryInput" placeholder="Enter a country" />
+      <button id="filterButton">Filter</button>
+      <select id="dateFilter">
+        <option value="">All Dates</option>
+      </select>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Cases</th>
+            <th>Deaths</th>
+            <th>Recoveries</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    
+  </body>
+
+</html>
