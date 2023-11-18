@@ -1,0 +1,137 @@
+:root {
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+  --primary-color: #646cff;
+  --secondary-color: #535bf2;
+  --tertiary-color: #535bf1;
+  --background-color: #242424;
+
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+
+  color-scheme: light dark;
+  color: var(--tertiary-color);
+  background-color: var(--background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  /* margin: 0; */
+  /* display: flex; */
+  place-items: center;
+  /* min-width: 320px; */
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  /* Add a background color to the content area */
+  border-radius: 8px;
+  /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add a subtle box shadow */
+}
+
+h1 {
+  font-size: 2.5em;
+  /* Slightly smaller heading size */
+  line-height: 1.2;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+#countryInput,
+#filterButton,
+#dateFilter {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  color: #888;
+  transition: border-color 0.2s;
+}
+
+#countryInput::placeholder,
+#filterButton::placeholder,
+#dateFilter::placeholder {
+  color: #888;
+}
+
+#countryInput:focus,
+#filterButton:focus,
+#dateFilter:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
